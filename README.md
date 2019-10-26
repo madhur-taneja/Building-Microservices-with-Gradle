@@ -16,8 +16,12 @@
 
 #### 2. Microservice architecture with an embedded Database
 
-* The services created in the previous step will be used to create an architecture with an embedded DB.The hardcoded data will be removed from the app.
+* The services created in the previous step will be used to create an architecture with embedded DB.The hardcoded data will be removed from the app.
 * The code will be in the `mongo` branch.
+* Two databases have been created, one for each `Movie-Info-Service` and `Rating-data-Service`.
+* New Entities were made in `Rating-data-Service`.
+* PostMapping methods were added for the above mentioned two services.
+* Still hardcoded URL's are used from `Movie-Catalog-Service` but will be changed in future.
 
 #### 3. Microservice architecture with an embedded Database and eureka as service discovery (Yet to be implemented)
 

@@ -1,21 +1,39 @@
 package io.trpspringmicroservices.movieinfoservice.models;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "Movie")
 public class Movie {
 
-    private String movieID;
+    @Id
+    private int movieId;
     private String name;
+    private  String desc;
 
-    public Movie(String movieID, String name) {
-        this.movieID = movieID;
+    public Movie() {
+    }
+
+    public Movie(int movieId, String name, String desc) {
+        this.movieId = movieId;
         this.name = name;
+        this.desc = desc;
     }
 
-    public String getMovieID() {
-        return movieID;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setMovieID(String movieID) {
-        this.movieID = movieID;
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public int getMovieId() {
+        return movieId;
+    }
+
+    public void setMovieId(int movieId) {
+        this.movieId = movieId;
     }
 
     public String getName() {

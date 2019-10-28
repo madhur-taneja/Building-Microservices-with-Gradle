@@ -32,7 +32,7 @@ public class MovieCatalogResource
 
         // For userId, call rating data service and get rating details
         UserRating ratings = restTemplate.getForObject(
-                "http://localhost:8083/ratingsdata/users/" + userId,
+                "http://rating-data-service/ratingsdata/users/" + userId,
                 UserRating.class);
 
         assert ratings != null;
@@ -40,7 +40,7 @@ public class MovieCatalogResource
 
         // For each movie  Id, call movie info service and get movie details
         // If RestTemplate is used
-        Movie m = restTemplate.getForObject("http://localhost:8082/movies/"  + rating.getMovieId(), Movie.class);
+        Movie m = restTemplate.getForObject("http://movie-info-service/movies/"  + rating.getMovieId(), Movie.class);
 
         // If WebClient is used
         /* Movie m = webClientBuilder.build()

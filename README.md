@@ -2,6 +2,7 @@
 
 * I created 3 microservices that interact with each other in Spring Boot using Gradle in Java 8.
 ![Architecture](images/Microservice_architecture.png)
+* This application doesn't have a proper UI and focuses on the Backend and the Database part.
 
 ## Getting Started
 
@@ -26,6 +27,14 @@
 #### 3. Microservice architecture with an embedded Database and eureka as service discovery (Yet to be implemented)
 
 * The code will be in the `eureka` branch.
+* New spring boot application called `disovery-server` is created whioh acts as the Eureka Server. All services are registered here.
+* New Dependencies are added in the other 3 services to act as Eureka Clients and are assigned name in the `application.properties` files.
+* Hardcoded URL's are updated with the service names. 
+* The registered services can be seen below:
+    ![Eureka Server GUI](images/Eureka.png)
+
+* The output still remains the same:
+    ![Catalog_output_1](images/Catalog-1.png)
 
 #### 4. Dockerized Microservice architecture with an embedded Database and eureka as service discovery (Yet to be implemented)
 

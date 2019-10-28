@@ -33,8 +33,11 @@
 * The registered services can be seen below:
     ![Eureka Server GUI](images/Eureka.png)
 
-* The output still remains the same:
+* The output still remains the same:  
+	Catalog-1
     ![Catalog_output_1](images/Catalog-1.png)
+	Catalog-2
+    ![Catalog_output_2](images/Catalog-2.png)
 
 #### 4. Dockerized Microservice architecture with an embedded Database and eureka as service discovery (Yet to be implemented)
 

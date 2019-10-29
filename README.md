@@ -24,7 +24,7 @@
 * PostMapping methods were added for the above mentioned two services.
 * Still hardcoded URL's are used from `Movie-Catalog-Service` but will be changed in future.
 
-#### 3. Microservice architecture with an embedded Database and eureka as service discovery (Yet to be implemented)
+#### 3. Microservice architecture with an embedded Database and eureka as service discovery
 
 * The code will be in the `eureka` branch.
 * New spring boot application called `disovery-server` is created whioh acts as the Eureka Server. All services are registered here.
@@ -50,6 +50,7 @@
 * IDE (Intellij)
 * Java 8
 * MongoDB
+* Docker
 
 ## Resources
 

@@ -29,14 +29,14 @@
 * The code will be in the `eureka` branch.
 * New spring boot application called `disovery-server` is created whioh acts as the Eureka Server. All services are registered here.
 * New Dependencies are added in the other 3 services to act as Eureka Clients and are assigned name in the `application.properties` files.
-* Hardcoded URL's are updated with the service names. 
-* The registered services can be seen below:
+* Hardcoded URL's are updated with the service names.
+* The registered services can be seen below:  
     ![Eureka Server GUI](images/Eureka.png)
 
 * The output still remains the same:  
-	Catalog-1
-    ![Catalog_output_1](images/Catalog-1.png)
-	Catalog-2
+	Catalog-1  
+    ![Catalog_output_1](images/Catalog-1.png)  
+	Catalog-2  
     ![Catalog_output_2](images/Catalog-2.png)
 
 #### 4. Dockerized Microservice architecture with an embedded Database and eureka as service discovery (Yet to be implemented)

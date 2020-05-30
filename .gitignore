@@ -1,0 +1,6 @@
+# Files to be Ignored by Git
+
+.idea
+**/.idea
+
+stale_outputs_checked
